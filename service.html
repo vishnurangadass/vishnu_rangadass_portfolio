@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishnu Rangadass | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/vishnu_icon.png" />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kavivanar&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- navbar section start -->
+    <header class="nav">
+      <nav class="navbar">
+        <input type="checkbox" id="toggler" />
+        <label for="toggler"
+          ><i class="bx bx-menu"></i><i class="bx bx-x"></i>Menu</label
+        >
+        <div class="menu">
+          <ul class="list">
+            <li><a href="./index.html" class="active">About</a></li>
+            <li><a href="./experience.html">Experince</a></li>
+            <li><a href="./service.html">Service</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- navbar section end -->
+
+    <div class="service-section">
+      <h1 class="service-heading">My Service</h1>
+      <div class="service-container">
+        <div class="circle">
+          <div class="box_main">
+            <div class="app_icon">
+              <img width="69" height="62" src="img/web-design.png" />
+            </div>
+            <h4 class="services_text active">Web Design</h4>
+          </div>
+        </div>
+        <div class="circle">
+          <div class="box_main">
+            <div class="app_icon">
+              <img width="69" height="62" src="img/web-development.png" />
+            </div>
+            <h4 class="services_text">Website Development</h4>
+          </div>
+        </div>
+        <div class="circle">
+          <div class="box_main">
+            <div class="app_icon">
+              <img width="69" height="62" src="img/responsive.png" />
+            </div>
+            <h4 class="services_text">Responsive Design</h4>
+          </div>
+        </div>
+        <div class="circle">
+          <div class="box_main">
+            <div class="app_icon">
+              <img width="69" height="62" src="img/logo-design.png" />
+            </div>
+            <h4 class="services_text">Logo Design</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="service-section">
+      <h1 class="service-heading">My Skills</h1>
+      <div class="service-container">
+        <div class="circle">
+          <div class="box_main">
+            <div class="app_icon">
+              <img width="69" height="62" src="img/html-5-logo.png" />
+            </div>
+            <div class="services_text">
+              <h4>HTML</h4>
+              <span onclick="openModal('modal1')">
+                <span class="info-icon">i</span><span style="font-size: 1rem;">See More</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="circle">
+          <div class="box_main">
+            <div class="app_icon">
+              <img width="69" height="62" src="img/css-3.png" />
+            </div>
+            <div class="services_text">
+              <h4>CSS</h4>
+              <span onclick="openModal('modal2')">
+                <span class="info-icon">i</span><span style="font-size: 1rem;">See More</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="circle">
+          <div class="box_main">
+            <div class="app_icon">
+              <img width="69" height="62" src="img/sass.png" />
+            </div>
+            <div class="services_text">
+              <h4>SASS / SCSS</h4>
+              <span onclick="openModal('modal3')">
+                <span class="info-icon">i</span><span style="font-size: 1rem;">See More</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="circle">
+          <div class="box_main">
+            <div class="app_icon">
+              <img width="69" height="62" src="img/java-script.png" />
+            </div>
+            <div class="services_text">
+              <h4>JavaScript</h4>
+              <span onclick="openModal('modal4')">
+                <span class="info-icon">i</span><span style="font-size: 1rem;">See More</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="circle">
+          <div class="box_main">
+            <div class="app_icon">
+              <img width="69" height="62" src="img/typescript.png" />
+            </div>
+            <div class="services_text">
+              <h4>TypeScript</h4>
+              <span onclick="openModal('modal5')">
+                <span class="info-icon">i</span><span style="font-size: 1rem;">See More</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="circle">
+          <div class="box_main">
+            <div class="app_icon">
+              <img width="69" height="62" src="img/react.png" />
+            </div>
+            <div class="services_text">
+              <h4>ReactJS</h4>
+              <span onclick="openModal('modal6')">
+                <span class="info-icon">i</span><span style="font-size: 1rem;">See More</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="service-section">
+      <h1 class="service-heading">Tools and Practices</h1>
+      <div class="service-container">
+        <div class="circle">
+          <div class="box_main">
+            <div class="app_icon">
+              <img width="69" height="62" src="img/visual-basic.png" />
+            </div>
+            <h4 class="services_text active">Visual Studio Code</h4>
+          </div>
+        </div>
+        <div class="circle">
+          <div class="box_main">
+            <div class="app_icon">
+              <img width="69" height="62" src="img/jira.png" />
+            </div>
+            <h4 class="services_text">Jira</h4>
+          </div>
+        </div>
+        <div class="circle">
+          <div class="box_main">
+            <div class="app_icon">
+              <img width="69" height="62" src="img/github.png" />
+            </div>
+            <h4 class="services_text">Github</h4>
+          </div>
+        </div>
+        <div class="circle">
+          <div class="box_main">
+            <div class="app_icon">
+              <img width="69" height="62" src="img/bitbucket.png" />
+            </div>
+            <h4 class="services_text">Bitbucket</h4>
+          </div>
+        </div>
+        <div class="circle">
+          <div class="box_main">
+            <div class="app_icon">
+              <img width="69" height="62" src="img/confluence.png" />
+            </div>
+            <h4 class="services_text">Confluence</h4>
+          </div>
+        </div>
+        <div class="circle">
+          <div class="box_main">
+            <div class="app_icon">
+              <img width="69" height="62" src="img/agile.png" />
+            </div>
+            <h4 class="services_text">Agile Methodology</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modals -->
+    <div class="modal" id="modal1">
+      <div class="modal-content">
+        <div>
+          <h2 class="modal-content-heading">HTML</h2>
+          <p style="width: 150px">Experince : 2+ Years</p>
+          <div style="display: flex">
+            <span style="width: 75px">Level : </span>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+          <img
+            src="./img/html-5-logo.png"
+            width="69"
+            height="62"
+            alt="react"
+            style="margin: 50px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal2">
+      <div class="modal-content">
+        <div>
+          <h2 class="modal-content-heading">CSS</h2>
+          <p style="width: 150px">Experince : 2+ Years</p>
+          <div style="display: flex">
+            <span style="width: 75px">Level : </span>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+          <img
+            src="./img/css-3.png"
+            width="69"
+            height="62"
+            alt="react"
+            style="margin: 50px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal3">
+      <div class="modal-content">
+        <div>
+          <h2 class="modal-content-heading">SASS/SCSS</h2>
+          <p style="width: 150px">Experince : 2+ Years</p>
+          <div style="display: flex">
+            <span style="width: 75px">Level : </span>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+          <img
+            src="./img/sass.png"
+            width="69"
+            height="62"
+            alt="react"
+            style="margin: 50px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal4">
+      <div class="modal-content">
+        <div>
+          <h2 class="modal-content-heading">JavaSscript</h2>
+          <p style="width: 150px">Experince : 2+ Years</p>
+          <div style="display: flex">
+            <span style="width: 75px">Level : </span>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span class="close-btn" onclick="closeModal('modal4')">&times;</span>
+          <img
+            src="./img/java-script.png"
+            width="69"
+            height="62"
+            alt="react"
+            style="margin: 50px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal5">
+      <div class="modal-content">
+        <div>
+          <h2 class="modal-content-heading">TypeScript</h2>
+          <p style="width: 150px">Experince : 2+ Years</p>
+          <div style="display: flex">
+            <span style="width: 75px">Level : </span>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" style="width: 65%"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span class="close-btn" onclick="closeModal('modal5')">&times;</span>
+          <img
+            src="./img/typescript.png"
+            width="69"
+            height="62"
+            alt="react"
+            style="margin: 50px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal6">
+      <div class="modal-content">
+        <div>
+          <h2 class="modal-content-heading">ReactJS</h2>
+          <p style="width: 150px">Experince : 2+ Years</p>
+          <div style="display: flex">
+            <span style="width: 75px">Level : </span>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" style="width: 60%"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span class="close-btn" onclick="closeModal('modal6')">&times;</span>
+          <img
+            src="./img/react.png"
+            width="69"
+            height="62"
+            alt="react"
+            style="margin: 50px"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- copyright section start -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Vishnu Rangadass. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- copyright section end -->
+    <script>
+      // Open the modal
+      function openModal(modalId) {
+        document.getElementById(modalId).style.display = "block";
+      }
+
+      // Close the modal
+      function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+      }
+
+      // Close modal when clicking outside of it
+      window.onclick = function (event) {
+        const modals = document.getElementsByClassName("modal");
+        for (let i = 0; i < modals.length; i++) {
+          if (event.target === modals[i]) {
+            modals[i].style.display = "none";
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

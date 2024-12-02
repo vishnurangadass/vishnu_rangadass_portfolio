@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishnu Rangadass | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/vishnu_icon.png" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kavivanar&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar section start -->
+    <header class="nav">
+      <nav class="navbar">
+        <input type="checkbox" id="toggler">
+        <label for="toggler"><i class='bx bx-menu' ></i><i class='bx bx-x'></i>Menu</label>
+        <div class="menu">
+        <ul class="list">
+          <li><a href="./index.html" class="active">About</a></li>
+          <li><a href="./experience.html">Experince</a></li>
+          <li><a href="./service.html">Service</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+      </nav>
+    </header>
+    <!-- navbar section end -->
+    <!--contact start -->
+    <section class="contact-page">
+      <div class="contact-container">
+        <div class="left-container">
+          <div>
+            <h2 class="contact-heading">Let's get in touch</h2>
+            <p class="contact-content">I’m always happy to hear your suggestions or just have a friendly chat. Feel free to reach out!</p>
+            <div>
+              <div class="contact-details">
+                <i class='bx bxs-map contact-icon'></i>
+                <p class="icon-content">D202, Block D, Bollineni Renata, Karanai main road, Ottiyambakkam, Chennai - 600130</p>
+              </div>
+              <div class="contact-details">
+                <i class='bx bx-phone contact-icon'></i>
+                <p class="icon-content">+91-7369024081</p>
+              </div>
+              <div class="contact-details">
+                <i class='bx bx-envelope contact-icon'></i>
+                <p class="icon-content"><a style="color:#fff" href="mailto:vishnurangadass@gmail.com"><span>vishnurangadass@gmail.com</span></a></p>
+              </div>
+              <div class="contact-details">
+                <i class='bx bx-globe contact-icon'></i>
+                <p class="icon-content"><a style="color:#fff" href="#">yoursite.com</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a target="_blank" href="https://github.com/vishnurangadass"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/vishnu-rangadass/"
+            >
+              <i class="bx bxl-linkedin"></i
+            ></a>
+            <a target="_blank" href="https://www.instagram.com/vishnu_r_dir/">
+              <i class="bx bxl-instagram"></i
+            ></a>
+            <a target="_blank" href="https://wa.me/7639024081">
+              <i class="bx bxl-whatsapp"></i
+            ></a>
+          </div>
+      </div>
+      <form class="right-container" id="contactForm" name="contactForm" method="post">
+         <h2 style="color:#f4637b">I’d love to hear from you.</h2>
+         <label for="name">Name</label>
+         <input class="input-form" type="text" id="name" name="name" placeholder="Your name" required />
+     
+         <label for="email">Email</label>
+         <input class="input-form" type="email" id="email" name="email" placeholder="Your email" required />
+
+         <label for="subject">Subject</label>
+         <input class="input-form" type="text" id="subject" name="subject" placeholder="Subject" required />
+     
+         <label for="message">Message</label>
+         <textarea class="textarea-form" id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+     
+         <button type="submit"  class="btn-2">Send Message</button>
+         <p id="statusMessage"></p>
+       </form></form>
+   </div>
+   <script>(function(){
+    emailjs.init({
+      publicKey: "0yUzSaXfAt93ZBc00",
+    });
+    })();
+    
+        // Form Submission
+        const form = document.getElementById("contactForm");
+        const statusMessage = document.getElementById("statusMessage");
+    
+        form.addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevent form from refreshing the page
+    
+          // Collect form data
+          const formData = {
+            name: document.getElementById("name").value,
+            subject: document.getElementById("subject").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value,
+          };
+    
+          // Send email using EmailJS
+          emailjs
+            .send("service_n8neufh", "template_lep2sgj", formData)
+            .then(
+              function(response) {
+                statusMessage.textContent = "Message sent successfully!";
+                statusMessage.className = "success";
+                form.reset(); // Reset the form
+              },
+              function(error) {
+                statusMessage.textContent = "Failed to send the message. Please try again.";
+                statusMessage.className = "error";
+                console.error("EmailJS Error:", error);
+              }
+            );
+        });
+  </script>
+    </section>
+    <!-- contact end-->
+
+    <!-- copyright section start -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Vishnu Rangadass. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- copyright section end -->
+  </body>
+</html>
